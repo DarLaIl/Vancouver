@@ -1,0 +1,399 @@
+
+html {
+    scroll-behavior: smooth;
+
+}
+body {
+    background-color: #EFFFFD;
+    margin: 0;
+    height: 100%;
+}
+body._lock {
+    overflow: hidden;
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
+.fixed {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+.header {
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    min-height: 100vh;
+    background: url("https://cdn.glitch.global/62c9fbab-f69e-495e-888e-aa4f36ddf3ff/logo.jpg?v=1706040146866") center / cover no-repeat fixed;
+}
+
+.header__container {
+    background: rgba(131, 196, 211, 0.46);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.4px);
+    -webkit-backdrop-filter: blur(3.4px);
+    border: 1px solid rgba(131, 196, 211, 0.48);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+.logo {
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    z-index: 5;
+    font-size: 30px;
+    color: #00204A;
+}
+.menu__list {
+    padding: 0 10px;
+    list-style: none;
+}
+.menu__link {
+    text-decoration: none;
+    color: #00204A;
+    margin: 0 10px;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.menu__link:hover {
+    text-decoration: underline; 
+    text-underline-offset: 25px;
+    text-decoration-thickness: 3px;
+}
+.menu__icon {
+    margin: 0 10px;
+    display: none;
+}
+.section-header {
+    display: flex;
+    justify-content: center;
+    background: rgba(131, 196, 211, 0.46);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.4px);
+    -webkit-backdrop-filter: blur(3.4px);
+    border: 1px solid rgba(131, 196, 211, 0.48);
+    height: 70px;
+}
+.header-1 {
+    color: #00204A;
+    padding: 10px;
+    font-size: 45px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    margin: 0;
+}
+.About {
+    padding: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+.part1 {
+    float: left;
+    margin-right: 10px;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.Card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    background-color: rgba(131, 196, 211, 0.46);
+    margin: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.Card-name {
+    color: #00204A;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    font-size: 15px;
+    text-decoration: none;
+}
+.Text {
+    background-color: white;
+    color: #00204A ;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 17px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5px;
+}
+.btn {
+    position: relative;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 6em;
+    transition: all .2s;
+    border: none;
+    font-family: 'Ubuntu', sans-serif;
+    color: #00204A;
+    background-color: rgba(131, 196, 211, 0.46);
+   }
+   
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+   
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+   
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+    background-color: rgba(66, 180, 206, 0.46);
+}
+   
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+.map {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    background-color: #E3F4F4;
+}
+#myVideo {
+    width: 600px;
+    margin: 40px;
+    float: left;
+}
+.button1 {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.button2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+.Name {
+    font-size: 25px;
+    margin: 10px;
+    width: 300px;
+}
+
+form {
+    float: left;
+    margin: 20px;
+    background: rgba(131, 196, 211, 0.46);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(13.7px);
+    -webkit-backdrop-filter: blur(13.7px);
+    border: 1px solid rgba(44, 51, 51, 0.38);
+    padding: 20px;
+    color: #00204A;
+    font-family: 'Ubuntu', sans-serif;
+}
+label {
+    font-size: 15px;
+}
+h3 {
+    font-size: 20px;
+    margin: 10px;
+}
+.same {
+    padding: 10px;
+}
+.block {
+    background-color: #CBE4DE;
+    padding: 3px;
+    border: none;
+    border-radius: 30px;
+}
+.page__section_5 {
+    min-width: 0;
+}
+.swiper {
+    max-width: 60%;
+}
+
+.image-slider__image {
+    text-align: center;
+}
+.image-slider__image img {
+    max-width: 100%;
+}
+.swiper-button-next::after, 
+.swiper-button-prev::after {
+    color: #ffffff;
+}
+.swiper-pagination {
+    bottom: 0;
+}
+.swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    line-height: 20px;
+    background-color: #ffffff;
+    font-size: 16px;
+}
+
+.footer {
+    padding-top: 30px;
+    text-align: center;
+    background: url("https://cdn.glitch.global/62c9fbab-f69e-495e-888e-aa4f36ddf3ff/stacked-waves-haikei.png?v=1706040137276") center / cover no-repeat;
+    height: 100px;
+}
+
+@media all and (min-width: 767px) {
+    .menu__list {
+        display: flex;
+        align-items: center;
+    }
+}
+@media all and (max-width: 1200px) {
+    .menu__link {
+        margin: 0 5px;
+        font-size: 18px;
+        font-weight: bolder;
+    }
+}
+@media all and (max-width: 880px) {
+      .Name {
+        font-size: 20px;
+        margin: 10px;
+        width: 250px;
+    }
+    .header {
+        background: url("https://cdn.glitch.global/62c9fbab-f69e-495e-888e-aa4f36ddf3ff/logo1.jpg?v=1706040147371") center / cover no-repeat;
+    }
+    .part1, #myVideo, .map {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .item, .header-1   {
+        font-size: 20px;
+    }
+    .About {
+        display: flex;
+        flex-direction: column;
+    }
+    body {
+        background-color: #D2E9E9;
+        margin: 0;
+    }
+    .header__container {
+        justify-content: space-between;
+        height: 70px;
+        z-index: 5;
+    }
+    .logo {
+        font-size: 30px;
+        width: 100px;
+    }
+    .menu__icon {
+        z-index: 5;
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 18px;
+        cursor: pointer;
+    }
+    .menu__icon span,
+    .menu__icon::before,
+    .menu__icon::after {
+        left: 0;
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        transition: all 0.3s ease 0s;
+        background-color: #ffffff;
+    }
+    .menu__icon::before,
+    .menu__icon::after {
+        content: "";
+    }
+    .menu__icon::before {
+        top: 0;
+    }
+    .menu__icon::after {
+        bottom: 0;
+    }
+    .menu__icon span {
+        top: 50%;
+        transform: scale(1) ;
+    }
+    .menu__icon._active span {
+        transform: scale(0);
+    }
+    .menu__icon._active::before {
+        top: 50%;
+        transform: rotate(-45deg) translate(0px, -50%);
+    }
+    .menu__icon._active::after {
+        bottom: 50%;
+        transform: rotate(45deg) translate(0px, 50%);
+    }
+    .menu__body {
+        position: fixed;
+        top: 0;
+        left: -120%;
+        width: 100vw;
+        background: rgba(131, 196, 211, 0.46);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(3.4px);
+        -webkit-backdrop-filter: blur(3.4px);
+        border: 1px solid rgba(131, 196, 211, 0.48);
+        padding: 100px 30px 30px 30px;
+        transition: left 0.3s ease 0s;
+        overflow: auto;
+    }
+    .menu__body._active {
+        left: 0;
+        height: 100vh;
+    }
+    .menu__list {
+        flex-direction: column;
+    }
+    .menu__list > li {
+        margin: 0px 0px 20px 0px;
+    } 
+    .menu__list > li:last-child {
+        margin-bottom: 0;
+    }
+    .menu__link {
+        font-size: 20px;
+    }
+}
+@media all and (max-width:500px) {
+    body {
+        background-color: #d2eef7;
+        margin: 0;
+    }
+
+    .fixed {
+        bottom: 10px;
+        right: 10px;
+    }
+    .swiper {
+        max-width: 100%;
+    }
+    
+}
